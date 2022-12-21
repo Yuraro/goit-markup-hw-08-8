@@ -843,6 +843,7 @@ body {
 @media screen and (min-width: 1200px) {
   .footer-soc {
     margin-left: 70px;
+    margin-top: 20px;
   }
 }
 
@@ -853,7 +854,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #FFFFFF;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .team-soc-list {
@@ -975,6 +976,11 @@ body {
   border: none;
   cursor: pointer;
   margin-top: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .btn-footer {
+    margin-top: 0px;
+  }
 }
 
 .footer-btn-icon {
