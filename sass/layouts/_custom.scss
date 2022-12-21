@@ -1,7 +1,12 @@
 .custom {
     background: #FFFFFF;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
 .custom-title {
@@ -10,18 +15,38 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-color);
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
+    }
 }
 
 .custom-list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
 }
 
 .custom-item {
-    width: 170px;
+    width: 210px;
     height: 92px;
+    flex-basis: calc((100% - 30px) / 2);
+
+    @media screen and (min-width: 768px) {
+        width: 226px;
+        height: 92px;
+        flex-basis: calc((100% - 60px) / 3);
+    }
+    @media screen and (min-width: 1200px) {
+        width: 170px;
+        height: 92px;
+        flex-basis: calc((100% - 150px) / 6);
+    }
+
+    // width: 170px;
+    // height: 92px;
 }
 
 .custom-link {
