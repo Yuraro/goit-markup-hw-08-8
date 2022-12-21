@@ -521,6 +521,11 @@ body {
 .example {
   padding-bottom: 94px;
 }
+@media screen and (max-width: 1200px) {
+  .example {
+    display: none;
+  }
+}
 
 .example__title {
   font-size: 36px;
