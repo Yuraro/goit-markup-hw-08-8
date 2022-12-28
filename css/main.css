@@ -190,6 +190,7 @@ body {
     display: flex;
     flex-direction: column;
     margin-left: 70px;
+    gap: 10px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -306,6 +307,7 @@ body {
 }
 
 .menu__list__link {
+  font-weight: 500;
   font-size: 40px;
   line-height: 1.175;
   letter-spacing: 0.02em;
@@ -324,10 +326,15 @@ body {
 }
 
 .menu__contact__list__mail {
-  font-size: 34px;
+  font-size: 24px;
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: #2196F3;
+}
+@media screen and (min-width: 420px) {
+  .menu__contact__list__mail {
+    font-size: 34px;
+  }
 }
 
 .menu__contact__list__tel {
@@ -336,27 +343,51 @@ body {
   letter-spacing: 0.02em;
   color: #757575;
 }
+@media screen and (min-width: 420px) {
+  .menu__contact__list__tel {
+    font-size: 34px;
+  }
+}
 
 .menu__soc {
   display: flex;
-  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
   margin-top: 64px;
+}
+@media screen and (min-width: 420px) {
+  .menu__soc {
+    gap: 10px;
+  }
 }
 
 .menu__soc__list:not(:last-child)::after {
   content: "";
   width: 22px;
   height: 0px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: 0.5px solid rgba(33, 33, 33, 0.2);
   transform: rotate(90deg);
-  margin-left: 10px;
+  margin-left: 5px;
+}
+@media screen and (min-width: 420px) {
+  .menu__soc__list:not(:last-child)::after {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    margin-left: 10px;
+  }
 }
 
 .menu__soc__list__link {
-  font-size: 18px;
+  font-weight: 500;
+  font-size: 15px;
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196F3;
+}
+@media screen and (min-width: 420px) {
+  .menu__soc__list__link {
+    font-size: 18px;
+  }
 }
 
 .hero {
@@ -652,14 +683,8 @@ body {
 }
 
 .team-soc-item {
-  width: 100%;
-  height: 100%;
-}
-@media screen and (min-width: 1200px) {
-  .team-soc-item {
-    width: 44px;
-    height: 44px;
-  }
+  width: 44px;
+  height: 44px;
 }
 
 .team-soc-link {
