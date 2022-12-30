@@ -42,7 +42,7 @@
 
     @media screen and (min-width: 480px) {
         width: 450px;
-        height: 609px;
+        height: 580px;
     }
 
     @media screen and (min-width: 1200px) {
@@ -87,7 +87,6 @@
 }
 
 .js-speaker-form {
-    width: 448px;
     height: 342px;
     margin-left: 15px;
     margin-right: 15px;
@@ -210,9 +209,12 @@
     }
 
     @media screen and (min-width: 768px) {
-        width: 425px;
-        margin-left: 52px;
+        width: 380px;
+        margin-left: 42px;
         height: 24px;
+        }
+        @media screen and (min-width: 1200px) {
+        width: 410px;
         }
 }
 
@@ -239,6 +241,9 @@
             font-size: 12px;
         }
     @media screen and (min-width: 768px) {
+        font-size: 13px;
+    }
+    @media screen and (min-width: 1200px) {
         font-size: 14px;
     }
 }
@@ -262,7 +267,7 @@
 
 .btn-sudmit-box {
 
-    margin-bottom: 40px;
+    margin-bottom: auto;
     margin-left: 55px;
     margin-right: auto;
     @media screen and (min-width: 480px) {
