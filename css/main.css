@@ -47,7 +47,12 @@ body {
   line-height: 1.1923;
   letter-spacing: 0.03em;
   color: #2196F3;
-  margin-right: 93px;
+  margin-right: 88px;
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    margin-right: 92px;
+  }
 }
 
 .logo-studio {
@@ -66,17 +71,17 @@ body {
 }
 @media screen and (min-width: 480px) {
   .container {
-    max-width: 480px;
+    width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1200px;
+    width: 1200px;
   }
 }
 
@@ -189,7 +194,6 @@ body {
   .header__contact {
     display: flex;
     flex-direction: column;
-    margin-left: 70px;
     gap: 10px;
   }
 }
@@ -207,7 +211,6 @@ body {
   line-height: 1.1428;
   letter-spacing: 0.02em;
   color: var(--subtitle-color);
-  margin-right: 50px;
   display: flex;
   align-items: center;
   transition-property: color;
@@ -985,17 +988,17 @@ body {
 }
 @media screen and (min-width: 480px) {
   .mail-footer {
-    min-width: 450px;
+    width: 450px;
   }
 }
 @media screen and (min-width: 768px) {
   .mail-footer {
-    max-width: 450px;
+    width: 450px;
   }
 }
 @media screen and (min-width: 1200px) {
   .mail-footer {
-    max-width: 358px;
+    width: 358px;
     margin-right: 12px;
   }
 }
@@ -1163,6 +1166,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
+  padding: 40px;
   width: 305px;
   height: 609px;
   background: #FFFFFF;
@@ -1191,16 +1195,16 @@ body {
 .modal-btn {
   width: 30px;
   height: 30px;
+  position: absolute;
   background: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: auto;
-  margin-right: 8px;
-  margin-top: 8px;
   cursor: pointer;
+  top: 8px;
+  right: 8px;
 }
 
 .modal-close-icon {
@@ -1222,17 +1226,9 @@ body {
 
 .js-speaker-form {
   height: 342px;
-  margin-left: 15px;
-  margin-right: 15px;
   margin-top: 12px;
   display: flex;
   flex-direction: column;
-}
-@media screen and (min-width: 480px) {
-  .js-speaker-form {
-    margin-left: 40px;
-    margin-right: 40px;
-  }
 }
 
 .text-upbox {
@@ -1245,6 +1241,7 @@ body {
 
 .modal-content {
   position: relative;
+  margin-bottom: 6px;
 }
 
 .modal-upbox {
@@ -1252,7 +1249,6 @@ body {
   border-radius: 4px;
   width: 280px;
   min-height: 40px;
-  margin-bottom: 6px;
   padding-left: 35px;
   outline: transparent;
   transition-property: border-color;
@@ -1277,7 +1273,7 @@ body {
   position: absolute;
   left: 12px;
   top: 50%;
-  transform: translateY(-60%);
+  transform: translateY(-50%);
   transition-property: fill;
   transition-duration: var(--t-d);
   transition-timing-function: var(--t-t-f);
@@ -1326,7 +1322,6 @@ body {
   width: 270px;
   height: 15px;
   margin-bottom: 30px;
-  margin-left: 20px;
   margin-top: 20px;
   display: flex;
   align-items: center;
@@ -1334,13 +1329,11 @@ body {
 @media screen and (min-width: 480px) {
   .checkbox {
     width: 370px;
-    margin-left: 40px;
   }
 }
 @media screen and (min-width: 768px) {
   .checkbox {
     width: 380px;
-    margin-left: 42px;
     height: 24px;
   }
 }
@@ -1397,30 +1390,13 @@ body {
   color: #2196F3;
 }
 
-.btn-sudmit-box {
-  margin-bottom: auto;
-  margin-left: 55px;
-  margin-right: auto;
-}
-@media screen and (min-width: 480px) {
-  .btn-sudmit-box {
-    margin-left: 125px;
-    margin-right: 125px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .btn-sudmit-box {
-    margin-left: 164px;
-    margin-right: 164px;
-  }
-}
-
 .btn-sudmit {
   min-width: 200px;
   min-height: 50px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   text-align: center;

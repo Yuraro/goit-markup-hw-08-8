@@ -114,7 +114,6 @@
     @media screen and (min-width: 768px) {
         display: flex;
         flex-direction: column;
-        margin-left: 70px;
         gap: 10px;
         }
     @media screen and (min-width: 1200px) {
@@ -130,7 +129,6 @@
     line-height: 1.1428;
     letter-spacing: 0.02em;
     color: var(--subtitle-color);
-    margin-right: 50px;
     display: flex;
     align-items: center;
     transition-property: color;
