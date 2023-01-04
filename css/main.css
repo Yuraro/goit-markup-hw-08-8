@@ -95,12 +95,6 @@ body {
   padding-bottom: 16px;
   border-bottom: 1px solid rgb(236, 236, 236);
 }
-@media screen and (min-width: 768px) {
-  .header {
-    padding-top: 26px;
-    padding-bottom: 26px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .header {
     padding-top: 24px;
@@ -202,6 +196,7 @@ body {
     display: flex;
     flex-direction: row;
     margin-left: auto;
+    gap: 30px;
   }
 }
 
@@ -844,6 +839,7 @@ body {
 @media screen and (min-width: 768px) {
   .footer-tab {
     display: flex;
+    align-items: baseline;
   }
 }
 
@@ -982,6 +978,7 @@ body {
   background-color: transparent;
   font-size: 14px;
   color: #FFFFFF;
+  padding-left: 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
@@ -1166,7 +1163,6 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  padding: 40px;
   width: 305px;
   height: 609px;
   background: #FFFFFF;
@@ -1221,7 +1217,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
-  margin-top: 10px;
+  margin-top: 40px;
 }
 
 .js-speaker-form {
@@ -1229,6 +1225,9 @@ body {
   margin-top: 12px;
   display: flex;
   flex-direction: column;
+  padding-left: 40px;
+  padding-bottom: 40px;
+  padding-right: 40px;
 }
 
 .text-upbox {
@@ -1247,7 +1246,7 @@ body {
 .modal-upbox {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  width: 280px;
+  width: 225px;
   min-height: 40px;
   padding-left: 35px;
   outline: transparent;
@@ -1291,7 +1290,7 @@ body {
 }
 
 .comment-box {
-  width: 280px;
+  width: 225px;
   min-height: 120px;
   padding: 12px 16px 12px 16px;
   font-size: 14px;
@@ -1322,7 +1321,6 @@ body {
   width: 270px;
   height: 15px;
   margin-bottom: 30px;
-  margin-top: 20px;
   display: flex;
   align-items: center;
 }
@@ -1354,7 +1352,7 @@ body {
 
 .agree {
   font-weight: 400;
-  font-size: 9px;
+  font-size: 7.5px;
   line-height: 1.7142;
   letter-spacing: 0.03em;
   color: #757575;
@@ -1408,4 +1406,7 @@ body {
   border-radius: 4px;
   border: none;
   cursor: pointer;
+}
+.btn-sudmit:focus, .btn-sudmit:hover {
+  background: #188CE8;
 }/*# sourceMappingURL=main.css.map */
